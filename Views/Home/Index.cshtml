@@ -1,8 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<script>
+    $(document).ready(function () {
+        $("tr:gt(0)").css("background-color", "yellow");
+    });
+</script>
+    <style>
+        .S div{
+            
+            border:double;
+            position:absolute;
+            text-align:center;
+            background-color:lightyellow;
+            width: 70%;
+        }
+    </style>
+<script>
+        setInterval(function () {
+            $('.S> div:first-child')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('.S');
+        }, 3000);
+    </script>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>餐廳首頁</a>.</p>
 </div>
+<div class="S">
+        <div>
+            <img src="https://mcusoft.files.wordpress.com/2018/07/ncake3.jpg" />
+        </div>
+        <div>
+            <img src="https://mcusoft.files.wordpress.com/2018/07/ncake4.jpg" />
+        </div>
+        <div>
+            <img src="https://mcusoft.files.wordpress.com/2018/07/ncake5.jpg" />
+        </div>
+    </div>
