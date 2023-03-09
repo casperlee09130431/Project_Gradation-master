@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()//餐廳首頁
     {
+        
         return View();
     }
 
